@@ -155,22 +155,16 @@ export default function Menu() {
           ))}
         </div>
 
-               {/* Fade the bottom of the menu into the next section. */}
-        <div className="relative -mx-6 mt-8 h-24 overflow-hidden sm:-mx-10 lg:-mx-16">
-          <div className="absolute inset-0 bg-gradient-to-b from-[#171a14] via-[#171a14]/70 to-transparent" />
-        </div>
-
-        {/* Keep the reservation button compact and centered. */}
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="relative z-10 -mt-16 flex justify-center pb-4"
+          className="mt-8 flex justify-center"
         >
           <a
             href="#reservations"
-            className="group inline-flex items-center gap-4 border border-[#b9c09a]/60 bg-[#b9c09a] px-7 py-4 text-[10px] tracking-[0.18em] text-[#11140f] transition-colors duration-300 hover:bg-[#dce0c8]"
+            className="group inline-flex items-center gap-4 border border-[#b9c09a]/60 bg-[#b9c09a] px-7 py-4 text-[10px] tracking-[0.18em] text-[#11140f] transition-all duration-300 hover:border-[#dce0c8] hover:bg-[#dce0c8]"
           >
             JOIN US AT THE TABLE
             <span className="transition-transform duration-300 group-hover:translate-x-1">

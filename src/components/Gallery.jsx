@@ -115,7 +115,7 @@ export default function Gallery() {
   {/* Left column: two equal images filling the full desktop height. */}
   <div className="grid min-h-0 grid-rows-2 gap-3 sm:col-span-1 lg:row-span-1">
     <GalleryCard
-      image={galleryImages[0]}
+      image={galleryImages[0]}className
       index={0}
       className="h-[240px] sm:h-[260px] lg:h-auto"
     />
